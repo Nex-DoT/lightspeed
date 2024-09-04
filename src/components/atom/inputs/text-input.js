@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const TextInput = ({ name, type }) => {
   const [isFocused, setIsFocused] = useState(false);
