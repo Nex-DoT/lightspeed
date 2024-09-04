@@ -1,25 +1,10 @@
-import './App.css';
-import Menu from "./components/orgonism/Menu";
-import PosSystem from "./components/molecules/PosSystem";
-import ManageBusiness from "./components/molecules/ManageBusiness";
-import Software from "./components/molecules/Software";
-import Payments from './components/molecules/Payments';
-import Collaboration from './components/molecules/Collaboration';
-import OnlinePOSFeature from './components/molecules/OnlinePOSFeature ';
-import Connect from './components/orgonism/Connect';
+import "./App.css";
+import FirstPage from "./components/page/first-page";
 function App() {
   return (
-    <div className="w-full min-h-svh bg-1 relative flex flex-col items-center">
-        <Menu />
-        <PosSystem/>
-        <ManageBusiness/>
-        <Software/>
-        <Collaboration/>
-        <Payments/>
-        <OnlinePOSFeature/>
-        <Connect/>
+    <div className="w-full min-h-svh bg-1 flex items-center justify-center overflow-x-hidden">
+      <FirstPage />
     </div>
-
   );
 }
 
