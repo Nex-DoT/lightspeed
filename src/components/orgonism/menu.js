@@ -67,13 +67,14 @@ const Menu = () => {
                             <IoMdClose onClick={()=>setHamburger(!hamburger)}/>
                         </span>
                     </div>
-                    <div className={`absolute transition-all duration-700 -top-4 right-0 ${ !hamburger && '!-right-[700px]'} w-10/12 bg-2 shadow-2xl h-svh py-24 px-6`}>
+                    <div className={`absolute transition-all duration-700 -top-4 right-0 ${ !hamburger && '!-right-[700px]'} w-10/12 bg-2 shadow-2xl h-svh py-24 px-6 z-20`}>
                         <span className='flex flex-col items-center gap-3'>
                             <button className=' w-full h-16 border font-normal rounded-sm hover:bg-1'>menu item</button>
                             <button className=' w-full h-16 border font-normal rounded-sm hover:bg-1'>menu item2</button>
                             <button className=' w-full h-16 border font-normal rounded-sm hover:bg-1'>menu item3</button>
                         </span>
                     </div>
+                    <span onClick={()=>setHamburger(false)} className={`absolute w-4/12 z-10 h-svh bg-4 opacity-25 -top-4 left-0 ${!hamburger && 'left-[900px]'} transition-all duration-500 `}></span>
                 </div>
 {/* -------------------------------- list menu ------------------------------- */}
                 {open.business  &&   <div className=' absolute top-14 shadow-lg border left-[180px] rounded-md bg-2 w-[730px] h-[470px]' onMouseEnter={()=>onMouseHandeler('business')} onMouseLeave={()=>offMouseHandeler('business')} ><Product/></div>}
