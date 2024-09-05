@@ -15,7 +15,7 @@ const Footer = () => {
 
       <hr />
 
-      <section className="flex flex-wrap-reverse md:flex-wrap items-start justify-center gap-7 md:justify-between pt-7 md:pt-14">
+      <section className="flex flex-wrap-reverse sm:flex-wrap items-start justify-center gap-7 sm:justify-between pt-7 md:pt-14">
         <div className="w-32"></div>
         <div className="text-white flex flex-col items-center  gap-7">
           <div className="text-2xl flex items-center gap-6">
