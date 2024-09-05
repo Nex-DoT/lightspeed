@@ -22,7 +22,10 @@ const Menu = () => {
 /* -------------------------------- handelers ------------------------------- */
     const onMouseHandeler = (name)=>{
         setOpen({
-            ...open ,
+            business:false,
+            product:false,
+            partners:false,
+            resources:false,
             [name] : true
         })
         console.log(open)
@@ -75,8 +78,8 @@ const Menu = () => {
 {/* -------------------------------- list menu ------------------------------- */}
                 {open.business  &&   <div className=' absolute top-14 shadow-lg border left-[180px] rounded-md bg-2 w-[730px] h-[470px]' onMouseEnter={()=>onMouseHandeler('business')} onMouseLeave={()=>offMouseHandeler('business')} ><Product/></div>}
                 {open.product   &&   <div className=' absolute top-14 shadow-lg border left-[325px] rounded-md bg-2 w-[730px] h-[470px]' onMouseEnter={()=>onMouseHandeler('product')} onMouseLeave={()=>offMouseHandeler('product')} ><Product/></div>}
-                {open.partners  &&   <div className=' absolute top-14 shadow-lg border left-[435px] rounded-md bg-2 w-[250px] h-[160px]' onMouseEnter={()=>onMouseHandeler('partners')} onMouseLeave={()=>offMouseHandeler('partners')} ><Partners/></div>}
-                {open.resources &&   <div className=' absolute top-14 shadow-lg border left-[910px] rounded-md bg-2 w-[170px] h-[170px]' onMouseEnter={()=>onMouseHandeler('resources')} onMouseLeave={()=>offMouseHandeler('resources')} ><Resources/></div>}
+                {open.partners  &&   <div className=' absolute top-14 shadow-lg border left-[405px] rounded-md bg-2 w-[250px] h-[160px]' onMouseEnter={()=>onMouseHandeler('partners')} onMouseLeave={()=>offMouseHandeler('partners')} ><Partners/></div>}
+                {open.resources &&   <div className=' absolute top-14 shadow-lg border left-[890px] rounded-md bg-2 w-[170px] h-[170px]' onMouseEnter={()=>onMouseHandeler('resources')} onMouseLeave={()=>offMouseHandeler('resources')} ><Resources/></div>}
             </section>
         </menu>
     );
