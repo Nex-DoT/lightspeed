@@ -15,8 +15,8 @@ const Footer = () => {
 
       <hr />
 
-      <section className="flex flex-wrap-reverse sm:flex-wrap items-start justify-center gap-7 sm:justify-between pt-7 md:pt-14">
-        <div className="w-32"></div>
+      <section className="flex flex-col-reverse xl:flex-row xl:items-start items-center justify-center gap-7 xl:justify-between pt-7 md:pt-14">
+        <div className="w-32 hidden xl:block"></div>
         <div className="text-white flex flex-col items-center  gap-7">
           <div className="text-2xl flex items-center gap-6">
             {footerIcon.map((item, index) => (<span className="hover:opacity-70 cursor-pointer" key={index}>{item}</span>))}
