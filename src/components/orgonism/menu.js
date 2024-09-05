@@ -61,7 +61,7 @@ const Menu = () => {
                 <div className='flex items-center gap-5 md:hidden text-lg'>
                     <FaPhoneAlt/>
                     <GiHamburgerMenu onClick={()=>setHamburger(!hamburger)}/>
-                    <div className={` absolute transition-all duration-500 h-20 -top-4 -right-0 ${!hamburger && '-right-[850px]'} bg-red-500 z-50 w-full text-white flex text-4xl`}>
+                    <div className={` absolute transition-all duration-500 h-20 -top-4 -right-0 ${!hamburger && '!-right-[850px]'} bg-red-500 z-50 w-full text-white flex text-4xl`}>
                         <span className='w-full flex items-center justify-between p-3'>
                             <img src={hamburgerLogo} alt="hamburger" className=' w-20 filter invert mix-blend-lighten' />
                             <IoMdClose onClick={()=>setHamburger(!hamburger)}/>
