@@ -1,7 +1,7 @@
 const Product = () => {
   return (
     <div className=" flex items-start justify-around w-full h-full p-10 className='text-base'">
-      <ul className="flex flex-col items-start gap-5 relative before:absolute before:h-full before:w-[1px] before:bg-zinc-200 before:-right-10 ">
+      <ul className="flex flex-col items-start h-full gap-5 relative before:absolute before:h-full before:w-[1px] before:bg-zinc-200 before:-right-10 ">
         <h3 className="text-base">Retail</h3>
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Point of Sale</li>
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Payments</li>
@@ -13,7 +13,7 @@ const Product = () => {
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Scanne</li>
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Hardwar</li>
       </ul>
-      <ul className="flex flex-col items-start gap-5 relative before:absolute before:h-full before:w-[1px] before:bg-zinc-200 before:-right-10">
+      <ul className="flex flex-col items-start h-full gap-5 relative before:absolute before:h-full before:w-[1px] before:bg-zinc-200 before:-right-10">
         <h3 className="text-base">Restaurant</h3>
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Point of Sale</li>
         <li className="font-semibold hover:text-orange-500 cursor-pointer">Order Anywhere</li>
