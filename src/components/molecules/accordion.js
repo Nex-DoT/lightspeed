@@ -4,7 +4,7 @@ import { FaArrowUp } from "react-icons/fa";
 
 const Accordion = ({ data }) => {
 /* ---------------------------------- datas --------------------------------- */
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(data.open || false);
   const [height, setHeight] = useState("0px");
   const contentRef = useRef(null);
 /* -------------------------------- handeler -------------------------------- */
@@ -30,7 +30,7 @@ const Accordion = ({ data }) => {
         </span>
       </div>
       <div  ref={contentRef}  style={{ maxHeight: height }}  className="overflow-hidden transition-max-height duration-300 ease-in-out" >
-        <div className="px-5 py-4 pr-20">
+        <div className="px-5 py-4 pr-16 md:pr-20">
           <p className="text-sm">{data.description}</p>
         </div>
       </div>

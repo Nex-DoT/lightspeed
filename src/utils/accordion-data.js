@@ -1,5 +1,6 @@
 export const accordionData = [
-  {
+  { 
+    open: true,
     title: "What is a POS system?",
     description: `
         A POS system—POS stands for point of sale—is a suite of software and hardware that gives businesses the ability to sell products and services, manage inventory, track sales performance, build customer relationships, and much more. Most POS systems seen in businesses today are actually ePOS systems, or electronic points of sale, as they operate online and store information in the cloud.

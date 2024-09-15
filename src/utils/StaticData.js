@@ -14,17 +14,6 @@ import score3 from "../image/starts/3.png";
 import score4 from "../image/starts/4.png";
 import score5 from "../image/starts/5.png";
 
-/* --------------------------- Collaboration picks -------------------------- */
-import pic1 from "../image/businesses/1.png";
-import pic2 from "../image/businesses/2.png";
-import pic3 from "../image/businesses/3.png";
-import pic4 from "../image/businesses/4.png";
-import pic5 from "../image/businesses/5.png";
-import pic6 from "../image/businesses/6.png";
-import pic7 from "../image/businesses/7.png";
-import pic8 from "../image/businesses/8.png";
-import pic9 from "../image/businesses/9.png";
-
 /* ------------------------------- review pics ------------------------------ */
 import review1 from "../image/reviews/1.png";
 import review2 from "../image/reviews/2.png";
@@ -48,7 +37,6 @@ export const PaymentsText = [
   "Keep more of your hard-earned money with an affordable rate starting at 2.6% + $0.10.",
 ];
 
-export const pics = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9];
 
 export const DataPosOnline = [
   {
@@ -94,11 +82,45 @@ export const DataInput = [
     },
   },
   {
+    name: "Company",
+    type: "text",
+  },
+  {
     title: "Product",
     select: ["product1", "product2", "product3"],
   },
+  {
+    title: "What is your annual revenue?",
+    select: ["product1", "product2", "product3"],
+  },
 ];
-
+export const DataInput1 = [
+  {
+    title: "Product",
+    select: ["product1", "product2", "product3"],
+  },
+  {
+    name: "Full name",
+    type: "text",
+  },
+  {
+    name: "Email address",
+    type: "email",
+  },
+  {
+    name: "Phone number",
+    type: "number",
+    selectCountry: {
+      flag: pictureFR,
+      code: "+98",
+      options: [
+        { code: "+33", img: pictureFR },
+        { code: "+1", img: pictureUS },
+        // سایر کشورها
+      ],
+    },
+  },
+];
 export const scorePicks = [score1, score2, score3, score4, score5];
 
 export const reviewData = [

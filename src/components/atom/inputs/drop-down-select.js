@@ -12,8 +12,8 @@ const DropdownSelect = ({ title, options }) => {
 
   return (
     <div>
-      <div className={`h-[48px] bg-white border border-gray-300 rounded-sm p-3 flex items-center justify-between cursor-pointer`} onClick={toggleDropdown}>
-        <span className={`${selectedValue ? "text-black" : "text-gray-500"}`}>{selectedValue || title}</span>
+      <div className={`h-[48px] bg-white border border-gray-300 rounded-sm p-2 flex items-center justify-between cursor-pointer`} onClick={toggleDropdown}>
+        <span className={`${selectedValue ? "text-black" : "text-gray-500 font-bold opacity-70 text-sm"}`}>{selectedValue || title}</span>
         <svg className={`w-4 h-4 transition-transform transform ${isOpen ? "rotate-180" : "rotate-0"}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
         </svg>
