@@ -9,8 +9,8 @@ const ReviewComponent = () => {
       <div className=" flex flex-wrap items-center justify-center gap-16 md:gap-24 ">
           {reviewData.map((item, index) => (<CardReview data={item} key={index} />))}
       </div>
-      <h1 className="mt-16 text-4xl w-full lg:w-[700px] text-center">See how Lightspeed POS system compares to the rest</h1>
-      <div className="flex flex-col items-center justify-center">
+      <h1 className="mt-16 text-4xl w-full lg:w-[700px] text-start md:text-center">See how Lightspeed POS system compares to the rest</h1>
+      <div className="flex flex-col items-start md:items-center justify-center">
         <a  href=""  className="text-orange-500 underline text-lg font-semibold hover:no-underline">Lightspeed vs. Shopify</a>
         <a  href=""  className="text-orange-500 underline text-lg font-semibold hover:no-underline">Lightspeed vs. Square</a>
         <a  href=""  className="text-orange-500 underline text-lg font-semibold hover:no-underline">Lightspeed Restaurant vs. Toast</a>

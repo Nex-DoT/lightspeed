@@ -12,9 +12,9 @@ const Connect = () => {
     revenue: "",
   });
   return (
-    <section className="flex flex-col items-center gap-10 bg-4 text-white w-full p-7 md:p-24">
+    <section className="flex flex-col items-center gap-12 bg-4 text-white w-full p-7 md:p-24 py-24">
       <h1 className=" text-4xl font-bold">Lets connect</h1>
-      <p className="text-lg font-bold"> Our experts know what it takes to help you succeed. Fill out your contact details and we’ll get in touch.</p>
+      <p className="text-lg font-bold text-center"> Our experts know what it takes to help you succeed. Fill out your contact details and we’ll get in touch.</p>
       <div className="flex flex-col gap-3">
         {DataInput.map((item, index) => (<Input data={item} key={index} />))}
       </div>
