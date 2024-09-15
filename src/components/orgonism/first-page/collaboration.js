@@ -12,8 +12,8 @@ import pic9 from "../../../image/businesses/9.png";
 
 const Collaboration = () => {
   return (
-    <section className=" bg-2 w-full flex flex-col items-center justify-center gap-10 ">
-      <h1 className="text-3xl md:text-4xl font-bold text-center">Powering the best businesses in Quebec</h1>
+    <section className=" bg-2 w-full flex flex-col items-center justify-center gap-10  p-7">
+      <h1 className="text-3xl md:text-4xl font-bold text-center px-4">Powering the best businesses in Quebec</h1>
       <div className="flex items-center justify-center flex-wrap w-full md:w-3/4">  
         <img src={pic1} alt="collab" className=" w-1/2 sm:w-52 " />
         <img src={pic2} alt="collab" className=" w-1/2 sm:w-52 " />
