@@ -8,7 +8,7 @@ const CheckedText = ({ text }) => {
         <span className="pt-1">
           <BsCheckLg className="text-red-500 font-bold" />
         </span>
-        <p>{text}</p>
+        <p className=" text-sm">{text}</p>
       </div>
       <hr />
     </div>

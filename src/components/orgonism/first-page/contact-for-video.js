@@ -13,7 +13,9 @@ const VideoLightspeed = () => {
       <div className="flex flex-col gap-3 items-center">
         {DataInput1.map((item, index) => (
           <InputComponent data={item} key={index} />   ))}
-      <Button text={"Next"} />
+          <span className=" w-10/12">
+            <Button text={"Next"} />
+          </span>
       </div>
       <p className="w-96 text-xs text-center font-semibold p-2">By submitting your phone number, you agree to receive text messages about Lightspeed deals. Your data is handled in accordance with our <a href="#" className="text-xs text-orange-500 underline">Privacy Policy.</a> Message/data rates may apply. Message frequency varies. Text STOP tounsubscribe at any time.</p>
     </section>
